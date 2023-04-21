@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+.about_parent {
+  /* background-color : ; */
+  min-height: 100vh;
+  padding: 30px 30px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.head {
+  /* background-color: aqua; */
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  /* background: #000; */
+}
+
+.about_below_header {
+  margin-bottom: 40px;
+  margin: 0px 80px;
+}
+
+/* .about_community {
+  
+  
+ 
+} */
+
+/* .about_community-box-title {
+  font-family: "Dancing Script";
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+} */
+
+
+
+
+
+/* .community_member_box {
+  width: 100vw;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 50px;
+} */
+
+.about3 {
+  margin: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.about_footer {
+  margin-bottom: 40px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-family: "Montserrat", "Helvetica Neue"; */
+  font-size: 17px;
+}
+
+.about_footer div:nth-child(1) {
+  font-size: 50px;
+  font-family: "Dancing Script";
+  font-weight: 800;
+  margin-bottom: 10px;
+  /* background-color: rgb(0, 37, 28); */
+}
+
+@media (max-width: 760px) {
+  .about_below_header {
+    margin: 10px 20px;
+  }
+}
+

@@ -1,0 +1,141 @@
+/* .Section_2 {
+  display: block;
+  width: 100%;
+  height: 10vh;
+  /* background-color: pink; */
+
+/* .head-text-outer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .section_2_inside_up {
+  display: flex;
+  /* background-color: red; */
+  /* justify-content: center;
+  align-items: center; */
+/* } */
+
+
+
+
+
+/* */ 
+
+/* .section_2_inside_down {
+  display: flex;
+  /* background-color: blue; */
+  /* justify-content: center;
+  align-items: center; */
+/* } */ 
+
+/* .section_2_inside_up img,
+.section_2_inside_down img {
+  width: 30%;
+  height: 50%;
+} */
+
+/* .section2_text {
+  display: flex;
+  padding: 50px 0px 50px 0px;
+} */
+
+/* .highreturn-box {
+  display: block;
+  /* height: 100%; */
+
+/* .highreturn-box .image-box,
+.highreturn-box .inner-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .beat-inflation {
+  display: block;
+} */
+
+/* .beat-inflation .image-box,
+.beat-inflation .inner-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .tax-benifit {
+  display: block;
+} */
+
+/* .tax-benifit .image-box,
+.tax-benifit .inner-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .additional-income {
+  display: block;
+} */
+
+/* .additional-income .image-box,
+.additional-income .inner-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .early-retirement {
+  display: block;
+} */
+
+/* .early-retirement .image-box,
+.early-retirement .inner-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* @media (max-width: 768px) { */
+  /* .section_2_inside_up {
+    flex-direction: column;
+    row-gap: 40px;
+    min-height: 50px;
+  } */
+/* } */
+/* 
+@media (max-width: 1200px) {
+  .Section_2 {
+    height: 120vh;
+    display: block;
+  }
+  .section_2_inside_down {
+    flex-direction: column;
+  /* } */ 
+
+  /* .stock-chain {
+            flex-wrap: wrap;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin-left: 1em;
+            margin-right: 1em;
+        } */
+  /* .highreturn-box, */
+  /* .beat-inflation,
+  .tax-benifit,
+  .additional-income,
+  .early-retirement {
+    margin-bottom: 1rem;
+  }
+  .head-text-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .head-text-outer .head-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+} */

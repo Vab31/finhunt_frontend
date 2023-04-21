@@ -1,0 +1,26 @@
+#bc-color {
+    height: 53vh;
+    background-color: #f8f9fa;
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+  }
+  * {
+    letter-spacing: 1px;
+  }
+  .field {
+    margin: 10px 0px;
+  }
+  .Sipbtn {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 8px 0;
+    padding: 15px 0;
+    background-color: #0077ee;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+  }

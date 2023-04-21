@@ -1,0 +1,4 @@
+CREATING NAVBAR
+1. target='' - this element in anchor tag helps to open link in another page instead of same page
+2. for making symbols of li tag disapper using list-style:none;
+3. 

@@ -1,0 +1,14 @@
+#bc-color {
+    height: 53vh;
+    background-color: #f8f9fa;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+  }
+  * {
+    letter-spacing: 1px;
+  }
+  .field {
+    margin: 10px 0px;
+  }

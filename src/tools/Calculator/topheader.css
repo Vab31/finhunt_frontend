@@ -1,0 +1,8 @@
+#header {
+    height: 30vh;
+    background-color: #353a5d;
+    color: white;
+  }
+  .active {
+    width: 13vh;
+  }
