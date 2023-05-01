@@ -2,6 +2,8 @@ import React from "react";
 import "./section1.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import { Link } from 'react-router-dom';
+
 
 const Section1 = () => {
   return (
@@ -17,6 +19,7 @@ const Section1 = () => {
         }}
       >
         <img src="../../c3.jpg" />
+        <Link to="https://chat.whatsapp.com/EkQj9MT97r67GLqZCzCnDM" className="text-slate-200" >
         <button
           style={{
             position: "absolute",
@@ -26,15 +29,18 @@ const Section1 = () => {
             borderRadius: "20px",
             fontSize: "16px",
             backgroundColor:"grey",
-            marginRight:"10px"
+            marginRight:"10px",
+            color:"smoke"
+            
           }}
         >
           Start Your Financial Journey Today
         </button>
+        </Link>
         {/* <p className="legend"></p>   */}
       </div>
       <div>
-        <img src="" />
+        <img src="https://wallpapercave.com/dwp1x/wp9223482.jpg" />
         {/* <p className="legend"></p> */}
         {/* <h1 className='c1_text'>It is impossible to understand the markets without understanding human behaviour</h1> */}
       </div>

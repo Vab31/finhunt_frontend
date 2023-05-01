@@ -23,9 +23,19 @@ export default function Sip() {
 
   function CalculateSIP() {
     amountTotalInvested = SipAmount * months;
+    console.log(amountTotalInvested);
+    console.log(SipAmount);
+    console.log(months);
     futureValue =
       (SipAmount * (Math.pow(1 + monthlyRate, months) - 1)) / monthlyRate;
     Estimeted = futureValue - amountTotalInvested;
+    console.log(Estimeted);
+  }
+
+  function timeset(e){
+    settime(e);
+   console.log(e);
+   CalculateSIP();
   }
   return (
     <div>
@@ -64,7 +74,7 @@ export default function Sip() {
                 <input
                   type="number"
                   value={time}
-                  onChange={(e) => settime(e.target.value)}
+                  onChange={(e) => timeset(e.target.value)}
                   placeholder="20 year"
                   className="years"
                 />

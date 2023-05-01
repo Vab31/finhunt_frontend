@@ -73,11 +73,11 @@ const Section4 = () => {
         </div>
       </div>
 
-      <div className="Footer">
+      <div className="Footer mt-3">
 
         <div className="contact_form ">
 
-          <div className="contactForm rounded h-100 min-w-min pt-4 pb-4">
+          {/* <div className="contactForm rounded h-100 min-w-min pt-4 pb-4">
             <h3 className='font-bold text-lg'>Contact Us</h3>
             <div class="inputBox">
               <input type="text" placeholder="Name" className='rounded' ></input>
@@ -93,7 +93,7 @@ const Section4 = () => {
                 <button className='bg-slate-300 rounded p-1 text-black'>Submit</button>
               </a>
             </div>
-          </div>
+          </div> */}
 
         </div>
         

@@ -5,7 +5,7 @@ import {
   Routes
 } from "react-router-dom";
 import './App.css';
-import { Header } from "./components/navbar/Header/Header";
+// import { Header } from "./components/navbar/Header/Header";
 
 import Navbar2 from './components/navbar/Navbar2';
 import Footer from "./Pages/Home/footer/Footer.js";
@@ -17,14 +17,15 @@ import Tools from "./Pages/Tools";
 import Sip from "./tools/Calculator/sip";
 import Lumpsum from "./tools/Calculator/lps";
 import Emergencyfundcal from "./tools/Calculator/emergencyfund";
-// import Addpage from "./Blogs/addpage";
+import Signup from "./components/auth/signup";
 import Addata from "./Pages/learn/addata";
-// import Navbar2 from "./components/navbar/Navbar2";
+import Login from "./components/auth/login";
+// import { isLoggedIn } from "./components/auth/login";
 
 function App() {
+  // console.log(isLoggedIn);
   return (
     <div className="main-container">
-    {/* <Header /> */}
     <Navbar2/>
     <Router>
       <Routes>
@@ -36,7 +37,10 @@ function App() {
           <Route exact path="Lumpsum" element={<Lumpsum />} />
           {/* <Route exact path="Blog" element={<Lumpsum />} /> */}
           <Route exact path="emergency" element={<Emergencyfundcal />} />
-          <Route exact path="addata" element={<Addata />} />
+       <Route exact path="addata" element={<Addata />} />:
+       <Route path="addAdmin" element={<Signup/>}/>
+          <Route path='admin' element={<Login/>}/>
+          
          
         
       </Routes>

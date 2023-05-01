@@ -30,15 +30,18 @@ function AddLearn() {
           url: link,
           description : desc
       };
-      Axios.post('http://localhost:3002/adddata', userObject)
+      Axios.post('https://finhunttbackend-production.up.railway.app/data', userObject)
           .then((res) => {
               console.log(res.data)
           }).catch((error) => {
               console.log(error)
           });
+          window.alert("Data Added Successfully;")
     }
 
   return (
+    // https://youtube.com/embed/zaNlepYdZz4?feature=share
+    
     <Form className='mt-5' onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="Title" >
         <Form.Label>Title</Form.Label>

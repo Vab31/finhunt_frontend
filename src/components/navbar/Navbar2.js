@@ -9,6 +9,8 @@ const navigation = [
   { name: 'Learn', href: '/Blogs', current: true },
   { name: 'Tools', href: '/Tools', current: true },
   { name: 'About', href: '/About', current: true },
+  { name: 'Add Data', href: '/Admin', current: true },
+
 ]
 
 function classNames(...classes) {
@@ -19,7 +21,7 @@ export default function Example() {
 const [data,setData]=useState(null);
 
   useEffect(() => {
-    fetch("/api")
+    fetch("/ap")
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);
