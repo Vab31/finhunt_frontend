@@ -21,7 +21,7 @@ export default function Example() {
 const [data,setData]=useState(null);
 
   useEffect(() => {
-    fetch("/ap")
+    fetch("https://finhunttbackend-production.up.railway.app/ap")
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);
