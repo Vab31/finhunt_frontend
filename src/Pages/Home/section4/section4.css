@@ -131,14 +131,14 @@
   column-gap: 10px;
 }
 
-@media (max-width: 768px) {
-  .cards-wrapper {
+@media (min-width: 1280px) {
+  .card_section {
     flex-direction: column;
     background-color: black;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .card img {
     height: 11em;
   }

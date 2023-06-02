@@ -52,7 +52,7 @@ const [data,setData]=useState(null);
                     alt="Your Company"
                   />
                   <div>
-                  {!data ? "Loading..." : data}
+                  The Finhuntt
                   </div>
                   <img
                     className="hidden h-8 w-auto lg:block"
