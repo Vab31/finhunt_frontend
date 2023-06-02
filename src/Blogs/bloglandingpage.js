@@ -16,7 +16,7 @@ export default function Bloglandingpage(){
 
   useEffect(() => {
     // Fetch data from backend when component mounts
-    axios.get('/data/val')
+    axios.get('https://finhunttbackend-production.up.railway.app/data/val')
       .then((response) => {
         // Update state with fetched data
         console.log(response.data);
