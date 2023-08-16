@@ -1,69 +1,69 @@
 import React, { useState } from "react";
 import "./sip.css";
 import Tophead from "./topheader";
-// import React, { useState } from "react";
 import Footer from "../../Pages/Home/footer/Footer";
 
 export default function Lumpsum() {
-  
-  const [SipAmount, setSipAmount] = useState("");
-  const [rate, setrate] = useState("");
-  const [time, settime] = useState("");
+  const [amount, setAmount] = useState("");
+  const [rate, setRate] = useState("");
+  const [time, setTime] = useState("");
+  const [amountTotalInvested, setAmountTotalInvested] = useState(0);
+  const [futureValue, setFutureValue] = useState(0);
+  const [estimeted, setEstimeted] = useState(0);
 
-  // var amountInvested = SipAmount;
-  var rateOfReturn = rate;
-  var amountTotalInvested = SipAmount;
-  // var monthlyRate = rateOfReturn / 12 / 100;
-  var months = time;
-  var futureValue = 0;
-  var Estimeted = futureValue - amountTotalInvested;
+  function calculateLumpsum() {
+    const rateOfReturn = rate / 100;
+    const months = time * 12;
 
-  function CalculateSIP() {
-    amountTotalInvested = SipAmount;
+    const newAmountTotalInvested = parseFloat(amount);
+    setAmountTotalInvested(newAmountTotalInvested);
 
-    futureValue =
-      amountTotalInvested * Math.pow(1 + rateOfReturn / 100, months);
-    Estimeted = futureValue - amountTotalInvested;
+    const newFutureValue = newAmountTotalInvested * Math.pow(1 + rateOfReturn, time);
+    setFutureValue(newFutureValue);
+
+    const newEstimeted = newFutureValue - newAmountTotalInvested;
+    setEstimeted(newEstimeted);
   }
+
   return (
     <div>
-    <Tophead/>
+      <Tophead />
       <h2 className="text-center mt-1">Lumpsum</h2>
       <div className="wraper container mt-3" id="bc-color">
         <div className="row justify-content-evenly">
           <div className="col-lg-4 text-centre">
             <div className="field">
-              <label htmlfor="">Total Investment ₹</label>
+              <label htmlFor="">Total Investment ₹</label>
               <div>
                 <input
                   type="number"
-                  value={SipAmount}
-                  onChange={(e) => setSipAmount(e.target.value)}
+                  value={amount}
+                  onChange={(e) => setAmount(e.target.value)}
                   placeholder="5000"
                   className="amount"
                 />
               </div>
             </div>
             <div className="field">
-              <label htmlfor="">Expected return rate(p.a) %</label>
+              <label htmlFor="">Expected return rate(p.a) %</label>
               <div>
                 <input
                   type="number"
                   value={rate}
-                  onChange={(e) => setrate(e.target.value)}
-                  placeholder="15%"
+                  onChange={(e) => setRate(e.target.value)}
+                  placeholder="15"
                   className="rate"
                 />
               </div>
             </div>
             <div className="field">
-              <label htmlfor="">Time period (years)</label>
+              <label htmlFor="">Time period (years)</label>
               <div>
                 <input
                   type="number"
                   value={time}
-                  onChange={(e) => settime(e.target.value)}
-                  placeholder="20 year"
+                  onChange={(e) => setTime(e.target.value)}
+                  placeholder="20"
                   className="years"
                 />
               </div>
@@ -71,7 +71,7 @@ export default function Lumpsum() {
 
             <button
               type="button"
-              onClick={CalculateSIP()}
+              onClick={calculateLumpsum}
               className="btn Sipbtn btn-secondary btn-md btn-block"
             >
               Calculate
@@ -84,17 +84,18 @@ export default function Lumpsum() {
             </h4>
             <h4>
               Est. returns:
-              <p id="Estreturn">₹ {Math.round(Estimeted)}</p>
+              <p id="Estreturn">₹ {Math.round(estimeted)}</p>
             </h4>
             <h4>
-              Total Value :<p id="futureValue">₹ {Math.round(futureValue)}</p>
+              Total Value :
+              <p id="futureValue">₹ {Math.round(futureValue)}</p>
             </h4>
-
           </div>
         </div>
       </div>
       <div className="mt-60">
-     <Footer/> </div>
+        <Footer />
+      </div>
     </div>
   );
 }
