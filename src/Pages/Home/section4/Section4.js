@@ -4,16 +4,18 @@ import {FaTelegram,FaInstagram,FaLinkedin,FaYoutube} from 'react-icons/fa';
 
 const Section4 = () => {
   return (
-    <div className="Section4">
+    <div className="Section4 mt-10">
       <div className="head">
-        <h1 className="head_main">Trusted By Users.</h1>
+        <h1 className="head_main mt-10">Trusted By Users.</h1>
         <p className="head_lines">
           Definitely We are leading the conversations on all social media. Here
           are some of them.
         </p>
       </div>
-      <div className="card_section">
-        <div className="cards-wrapper ">
+      <div className="">
+    
+    <div className="">
+        <div className="cards-wrapper">
           <div className="card">
             <img
               src="../../card/Akash.jpg"
@@ -72,34 +74,20 @@ const Section4 = () => {
           </div>
         </div>
       </div>
+      
 
       <div className="Footer mt-3">
 
         <div className="contact_form ">
 
-          {/* <div className="contactForm rounded h-100 min-w-min pt-4 pb-4">
-            <h3 className='font-bold text-lg'>Contact Us</h3>
-            <div class="inputBox">
-              <input type="text" placeholder="Name" className='rounded' ></input>
-            </div>
-            <div class="inputBox">
-              <input type="text" placeholder="Email" className='rounded'></input>
-            </div>
-            <div class="inputBox">
-              <textarea placeholder="Write something....." className='rounded'></textarea>
-            </div>
-            <div class="buttons">
-              <a href="/submit.txt" target="_blank">
-                <button className='bg-slate-300 rounded p-1 text-black'>Submit</button>
-              </a>
-            </div>
-          </div> */}
+        
 
         </div>
         
 
        
       </div>
+    </div>
     </div>
   );
 }
