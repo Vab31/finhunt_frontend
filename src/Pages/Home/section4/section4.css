@@ -140,6 +140,18 @@
 
 @media (max-width: 768px) {
   .card img {
-    height: 11em;
+    height: 20em;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-wrapper {
+    /* height: 11em; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card{
+    margin: 3px;
   }
 }
