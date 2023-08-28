@@ -5,11 +5,11 @@ import { Button } from 'react-bootstrap'
 
 export default function Tophead(){
  return(
-    <div>
+    <div className="">
     <div id="header">
-      <header className="mt-8">
+      <header className="">
         {/* <h1 className="text-center container pt-4">SIP Calculator</h1> */}
-        <h5 className="text-center ">Systematic Investment Plan Calculator</h5>
+        <h5 className="text-center pt-3">Systematic Investment Plan Calculator</h5>
         <div className="text-center mt-4">
           <Link
             to="/SIP"

@@ -20,7 +20,9 @@ import Emergencyfundcal from "./tools/Calculator/emergencyfund";
 import Signup from "./components/auth/signup";
 import Addata from "./Pages/learn/addata";
 import Login from "./components/auth/login";
+import Profilepage from "./takeAdvice/profilepage";
 // import { isLoggedIn } from "./components/auth/login";
+import Editprofile from "./takeAdvice/editProfile";
 
 function App() {
   // console.log(isLoggedIn);
@@ -40,6 +42,8 @@ function App() {
        <Route exact path="addata" element={<Addata />} />:
        <Route path="addAdmin" element={<Signup/>}/>
           <Route path='admin' element={<Login/>}/>
+          <Route path='/profile' element={<Profilepage/>}/>
+          <Route path='/editProfile' element={<Editprofile/>}/>
           
          
         

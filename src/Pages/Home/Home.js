@@ -10,7 +10,7 @@ import Footer from './footer/Footer'
 
 function Home() {
   return (
-    <div className='bg-purple-300 -mt-10'>
+    <div className='bg-purple-300 title'>
         <div className='section1'>
           <Section1 />
         </div>
